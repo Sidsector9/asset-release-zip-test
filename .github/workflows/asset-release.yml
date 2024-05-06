@@ -1,0 +1,22 @@
+name: Asset release YML
+
+on:
+  workflow_dispatch:
+  workflow_call:
+  push:
+   branches:
+    - trunk
+
+jobs:
+  build:
+    name: Asset release JOB
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install Composer dependencies
+        run: composer install --no-dev
+
+      - name: Generate ZIP file
+        uses: 10up/action-wordpress-plugin-build-zip@stable
