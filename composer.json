@@ -1,0 +1,17 @@
+{
+    "name": "work/asset-release-zip-test",
+    "autoload": {
+        "psr-4": {
+            "Work\\AssetReleaseZipTest\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Siddharth Thevaril",
+            "email": "siddharth.thevaril@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.8"
+    }
+}
