@@ -8,7 +8,9 @@ set -eo
 
 generate_zip() {
     echo "Generating zip file..."
+    pwd
     echo "${GITHUB_WORKSPACE}"
+    cd "${GITHUB_WORKSPACE}" && ls
     echo "${SLUG}"
 
     # use a symbolic link so the directory in the zip matches the slug
