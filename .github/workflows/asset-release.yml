@@ -21,7 +21,7 @@ jobs:
         run: composer install --no-dev
 
       - name: Generate ZIP file
-        run: pwd && ls
+        run: pwd && ls && ./deploy.sh
 
       - name: Upload release assets
         uses: softprops/action-gh-release@v2
