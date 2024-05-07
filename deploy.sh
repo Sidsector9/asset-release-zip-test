@@ -9,11 +9,12 @@ set -eo
 generate_zip() {
     echo "Generating zip file..."
     echo "${GITHUB_WORKSPACE}"
+    echo "${SLUG}"
 
     # use a symbolic link so the directory in the zip matches the slug
-    zip -r "${GITHUB_WORKSPACE}/asset-release-zip-test.zip" asset-release-zip-test
+    # zip -r "${GITHUB_WORKSPACE}/${SLUG}.zip" "$SLUG"
 
-    echo "zip-path=${GITHUB_WORKSPACE}/asset-release-zip-test.zip" >> "${GITHUB_OUTPUT}"
+    # echo "zip-path=${GITHUB_WORKSPACE}/${SLUG}.zip" >> "${GITHUB_OUTPUT}"
     echo "✓ Zip file generated!"
 }
 
