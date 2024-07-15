@@ -23,3 +23,9 @@ jobs:
 
     - name: Start env
       run: npm run env:start
+
+    - name: ping localhost
+      run: curl -I http://localhost
+
+    - name: ping subdir
+      run: curl -I http://localhost/second
