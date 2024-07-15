@@ -3,8 +3,7 @@ name: E2E Tests
 on:
   push:
     branches:
-      - develop
-      - trunk
+      - main
 
 jobs:
   build:
