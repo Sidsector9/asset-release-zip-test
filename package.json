@@ -1,0 +1,19 @@
+{
+  "name": "wp-env",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "env:start": "wp-env start",
+    "env:stop": "wp-env stop",
+    "env:destroy": "wp-env destroy",
+    "env:install-path": "wp-env install-path",
+    "postenv:start": "./initialize.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/env": "^10.3.0"
+  }
+}
